@@ -14,7 +14,7 @@ pageextension 50101 "CSD ResourcelistExt" extends "Resource list"
             {
 
             }
-            field("CSD Quantity Per Day"; "CSD Quantity Per Day")
+            field("CSD Maximum Participants"; "CSD Maximum Participants")
             {
                 Visible = Showmaxfield;
             }
