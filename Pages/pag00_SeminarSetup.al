@@ -17,7 +17,6 @@ page 50100 "CSD Seminar Setup"
             {
                 field("Seminar Nos."; "Seminar Nos.")
                 {
-                    ApplicationArea = All;
 
                 }
                 field("Seminar Registration No."; "Seminar Registration No.")
