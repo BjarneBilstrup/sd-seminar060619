@@ -1,0 +1,26 @@
+{
+  "id": "a3ba9e80-30d4-46b6-9ac8-2b8eef63ec3a",
+  "name": "SD Seminar",
+  "publisher": "Bjarne Bilstrup - balance.as",
+  "version": "1.0.0.0",
+  "brief": "Brief desciption",
+  "description": "Bigger Description",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "http://jp.dk",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "14.0.0.0",
+  "application": "14.0.0.0",
+  "idRanges": [
+    {
+      "from": 50100,
+      "to": 50149
+    }
+  ],
+  "contextSensitiveHelpUrl": "https://SDSeminar.com/help/",
+  "showMyCode": true,
+  "runtime": "3.0"
+}
