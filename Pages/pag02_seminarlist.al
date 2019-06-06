@@ -39,21 +39,40 @@ page 50102 "CSD Seminar List"
                 }
             }
         }
-        area(Factboxes)
+        area(FactBoxes)
         {
+            systempart("Links"; Links)
+            {
 
+            }
+            systempart("notes"; notes)
+            {
+
+            }
         }
     }
 
     actions
     {
-        area(Processing)
+        area(navigation)
         {
+            group("&Seminar")
+            {
+                action("Co&mments")
+                {
+                    //runobject=page "csd Seminar Comment Sheet";
+                    //runpagelinke = "table name" = const(seminar),"no." = Field "no.");
+                    Image = Comment;
+                    Promoted = true;
+                    PromotedIsBig = true;
+                    PromotedOnly = true;
+                }
+            }
             action(ActionName)
             {
                 ApplicationArea = All;
 
-                trigger OnAction();
+                trigger OnAction()
                 begin
 
                 end;
