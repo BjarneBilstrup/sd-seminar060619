@@ -1,6 +1,9 @@
 table 50104 "CSD Seminar Comment Line"
 {
     DataClassification = SystemMetadata;
+    Caption = 'Seminar Comment Line';
+    LookupPageId = "CSD Seminar List";
+    DrillDownPageId = "CSD Seminar Comment List";
 
     fields
     {
