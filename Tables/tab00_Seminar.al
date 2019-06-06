@@ -1,13 +1,15 @@
 table 50101 "CSD Seminar"
 {
     caption = 'CSD Seminar';
+    DrillDownPageId = 50102;
+    LookupPageId = 50102;
 
     fields
     {
         field(10; "No."; Code[20])
         {
             Caption = 'No.';
-
+            DataClassification = SystemMetadata;
             trigger onvalidate()
 
             begin
@@ -21,6 +23,7 @@ table 50101 "CSD Seminar"
         field(20; Name; Text[50])
         {
             Caption = 'Name';
+            DataClassification = SystemMetadata;
             trigger onvalidate()
 
             begin
@@ -31,31 +34,38 @@ table 50101 "CSD Seminar"
         field(30; "Seminar Duration"; Decimal)
         {
             caption = 'Seminar Duration';
+            DataClassification = SystemMetadata;
             DecimalPlaces = 0 : 1;
         }
         field(40; "Minimum Participants"; Integer)
         {
             Caption = 'Minimum Participants';
+            DataClassification = SystemMetadata;
         }
         field(50; "Maximum Participants"; Integer)
         {
             Caption = 'Maximum Participants';
+            DataClassification = SystemMetadata;
         }
         field(60; "Search name"; Code[50])
         {
             Caption = 'Search Name';
+            DataClassification = SystemMetadata;
         }
         field(70; Blocked; Boolean)
         {
             Caption = 'Blocked';
+            DataClassification = SystemMetadata;
         }
         field(80; "Last date Modified"; Date)
         {
             Caption = 'Last date Modified';
+            DataClassification = SystemMetadata;
         }
         field(90; Commment; Boolean)
         {
             Caption = 'Comment';
+            DataClassification = SystemMetadata;
             Editable = false;
             //            FieldClass = FlowField;
             //            CalcFormula=exist("seminar Comment line"
@@ -65,11 +75,13 @@ table 50101 "CSD Seminar"
         field(100; "seminar price"; Decimal)
         {
             Caption = 'Seminar Price';
+            DataClassification = SystemMetadata;
             AutoFormatType = 1;
         }
         field(110; "Gen Prod. Posting Group"; Code[10])
         {
             caption = 'Gen Prod. Posting Group';
+            DataClassification = SystemMetadata;
             TableRelation = "Gen. Product Posting Group";
             trigger Onvalidate();
             begin
@@ -82,11 +94,13 @@ table 50101 "CSD Seminar"
         field(120; "Vat Prod. Posting Group"; code[20])
         {
             Caption = 'Vat Prod. Posting Group';
+            DataClassification = SystemMetadata;
         }
         field(130; "No. Series"; Code[20])
         {
             Caption = 'no. Series';
             TableRelation = "No. Series";
+            DataClassification = SystemMetadata;
         }
     }
 

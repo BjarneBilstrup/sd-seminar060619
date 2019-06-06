@@ -40,4 +40,5 @@ page 50100 "CSD Seminar Setup"
             insert;
         end;
     end;
+    
 }
