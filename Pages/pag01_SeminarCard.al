@@ -63,13 +63,14 @@ page 50101 "csd seminar Card"
                     }
                     field("seminar price"; "seminar price")
                     {
+                        caption = 'seminar price';
+                    }
+                    field("Commment"; "Commment")
+                    {
                         caption = 'Commment';
                     }
                 }
-                field("Commment"; "seminar price")
-                {
-                    caption = 'Commment';
-                }
+                
             }
         }
         area(FactBoxes)
