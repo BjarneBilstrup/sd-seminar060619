@@ -1,38 +1,35 @@
 tableextension 50100 "CSD ResourceExt" extends Resource
-//CSD ver 1 by BB
+// CSD1.00 - 2012-06-15 - D. E. Veloper
+// Chapter 5 - Lab 1-1
+// -	Added new fields:
+// -	Internal/External
+// -	Maximum Participants
 {
     fields
     {
-        modify("profit %")
+        modify("Profit %")
         {
-            trigger onaftervalidate()
+        
+            trigger OnAfterValidate()
             begin
-                rec.TestField("Unit Cost");
+                Rec.TestField("Unit Cost");
             end;
         }
-        modify(Type)
-        {
-            OptionCaption = 'Instructor,Room';
-        }
-        field(50101; "CSD Resource Type"; Option)
+        field(50101;"CSD Resource Type";Option)
         {
             Caption = 'Resource Type';
-            DataClassification = SystemMetadata;
             OptionMembers = "Internal","External";
             OptionCaption = 'Internal,External';
         }
-        field(50102; "CSD Maximum Participants"; Integer)
+        field(50102;"CSD Maximum Participants";Integer)
         {
-            caption = 'Maximum participants';
-            DataClassification = SystemMetadata;
+            Caption = 'Maximum Participants';
         }
-        field(50103; "CSD Quantity Per Day"; Decimal)
+        field(50103;"CSD Quantity Per Day";Integer)
         {
-            Caption = 'Quantity per day';
-            DataClassification = SystemMetadata;
-        }
-        
-
+            Caption = 'Quantity Per Day';
+        }        
     }
-
 }
+
+

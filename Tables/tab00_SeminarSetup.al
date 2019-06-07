@@ -1,64 +1,38 @@
 table 50100 "CSD Seminar Setup"
+// CSD1.00 - 2018-01-01 - D. E. Veloper
+// Chapter 5 - Lab 3-1
 {
-
-    Caption = 'Seminar setup';
+    Caption = 'Seminar Setup';
 
     fields
     {
-        field(10; "Primary Key"; Code[10])
+        field(10;"Primary Key";Code[10])
         {
-            caption = 'Primary Ley';
-            DataClassification = SystemMetadata;
-        }
-        field(20; "Seminar Nos."; Code[10])
-        {
-            caption = '"Seminar Nos."';
-            DataClassification = SystemMetadata;
+            Caption = 'Primary Key';
             TableRelation = "No. Series";
         }
-        field(30; "Seminar Registration Nos."; code[20])
+        field(20;"Seminar Nos.";Code[20])
         {
-            caption = 'Seminar Registration Nos.';
-            DataClassification = SystemMetadata;
+            Caption = 'Seminar Nos.';
             TableRelation = "No. Series";
         }
-        field(40; "Posted Seminar Reg. Nos."; code[20])
+        field(30;"Seminar Registration Nos.";code[20])
         {
-            caption = 'Posted Seminar Reg. Nos.';
-            DataClassification = SystemMetadata;
+            Caption = 'Seminar Registration Nos.';
+            TableRelation = "No. Series";
+        }
+        field(40;"Posted Seminar Reg. Nos.";code[20])
+        {
+            Caption = 'Posted Seminar Reg. Nos.';
             TableRelation = "No. Series";
         }
     }
 
     keys
     {
-        key(PK; "primary Key")
+        key(PK;"Primary Key")
         {
             Clustered = true;
         }
     }
-
-    var
-        myInt: Integer;
-
-    trigger OnInsert()
-    begin
-
-    end;
-
-    trigger OnModify()
-    begin
-
-    end;
-
-    trigger OnDelete()
-    begin
-
-    end;
-
-    trigger OnRename()
-    begin
-
-    end;
-
 }

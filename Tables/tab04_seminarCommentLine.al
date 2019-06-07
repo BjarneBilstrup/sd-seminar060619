@@ -10,7 +10,7 @@ table 50104 "CSD Seminar Comment Line"
         field(10; "Table name"; Option)
         {
             caption = ' Table Name';
-            OptionMembers = "Seminar","Seminar Registration Header","Posted Seminar Reg. Header";
+            OptionMembers = "Seminar","Seminar Registration","Posted Seminar Registration";
             DataClassification = SystemMetadata;
 
         }

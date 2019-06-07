@@ -1,41 +1,37 @@
-page 50102 "CSD Seminar List"
-
+page 50102"CSD Seminar List"
+// CSD1.00 - 2018-01-01 - D. E. Veloper
+// Chapter 5 - Lab 3-6
 {
-    Caption = 'Seminar List';
+    Caption='Seminar List';
     PageType = List;
-    ApplicationArea = All;
-    UsageCategory = Lists;
     SourceTable = "CSD Seminar";
+    Editable = false;
+    CardPageId = 50101;
+    UsageCategory = Lists;
 
     layout
     {
-        area(Content)
+        area(content)
         {
-            repeater(GroupName)
+            repeater(Group)
             {
                 field("No."; "No.")
                 {
-                    Caption = 'No.';
                 }
                 field(Name; Name)
                 {
-                    Caption = 'Name';
                 }
-                field("Seminar Duration"; "Seminar Duration")
+                field("Seminar Duration";"Seminar Duration")
                 {
-                    Caption = 'Seminar Duration';
                 }
-                field("seminar price"; "seminar price")
+                field("Seminar Price"; "Seminar Price")
                 {
-                    Caption = 'seminar price';
                 }
                 field("Minimum Participants"; "Minimum Participants")
                 {
-                    Caption = 'Minimum Participants';
                 }
                 field("Maximum Participants"; "Maximum Participants")
                 {
-                    Caption = 'Maximum Participants';
                 }
             }
         }
@@ -43,13 +39,12 @@ page 50102 "CSD Seminar List"
         {
             systempart("Links"; Links)
             {
-
             }
-            systempart("notes"; notes)
+            systempart("Notes"; Notes)
             {
-
             }
         }
+
     }
 
     actions
@@ -60,8 +55,8 @@ page 50102 "CSD Seminar List"
             {
                 action("Co&mments")
                 {
-                    //runobject=page "csd Seminar Comment Sheet";
-                    //runpagelinke = "table name" = const(seminar),"no." = Field "no.");
+                    RunObject=page"CSD Seminar Comment Sheet";
+                    RunPageLink = "Table Name"=const(Seminar),"No."=field("No.");
                     Image = Comment;
                     Promoted = true;
                     PromotedIsBig = true;
