@@ -23,6 +23,6 @@
   "contextSensitiveHelpUrl": "https://SDSeminar.com/help/",
   "showMyCode": true,
   "runtime": "3.0",
-  "features": ["TranslationFile"]
-
+  "features": ["TranslationFile"],
+  "target": "Internal"
 }
