@@ -288,6 +288,16 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Reg. Header - Field Posting No. - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 3775708622 - NamedType 3114637384" size-unit="char" translate="yes" xml:space="preserve">
+          <source>You cannot delete the Seminar Registration, because there is at least one %1 where %2=%3.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Reg. Header - NamedType Text001</note>
+        </trans-unit>
+        <trans-unit id="Table 3775708622 - NamedType 3752334001" size-unit="char" translate="yes" xml:space="preserve">
+          <source>You cannot change the %1, because there is at least one %2 with %3=%4.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Reg. Header - NamedType Text002</note>
+        </trans-unit>
         <trans-unit id="Table 3775708622 - NamedType 732759939" size-unit="char" translate="yes" xml:space="preserve">
           <source>This Seminar is for %1 participants. \The selected Room has a maximum of %2 participants \Do you want to change %3 for the Seminar from %4 to %5?</source>
           <note from="Developer" annotates="general" priority="2"></note>
