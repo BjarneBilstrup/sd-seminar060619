@@ -1,4 +1,4 @@
-page 50139  "CSD Posted Seminar Charges"
+page 50139 "CSD Posted Seminar Charges"
 {
     // CSD1.00 - 2018-01-01 - D. E. Veloper
     //   Chapter 7 - Lab 3
@@ -16,31 +16,31 @@ page 50139  "CSD Posted Seminar Charges"
         {
             repeater(Group)
             {
-                field("No.";"No.")
+                field("No."; "No.")
                 {
                 }
-                field(Description;Description)
+                field(Description; Description)
                 {
                 }
-                field(Quantity;Quantity)
+                field(Quantity; Quantity)
                 {
                 }
-                field("Unit of Measure Code";"Unit of Measure Code")
+                field("Unit of Measure Code"; "Unit of Measure Code")
                 {
                 }
-                field("Bill-to Customer No.";"Bill-to Customer No.")
+                field("Bill-to Customer No."; "Bill-to Customer No.")
                 {
                 }
-                field("Gen. Prod. Posting Group";"Gen. Prod. Posting Group")
+                field("Gen. Prod. Posting Group"; "Gen. Prod. Posting Group")
                 {
                 }
-                field("Unit Price";"Unit Price")
+                field("Unit Price"; "Unit Price")
                 {
                 }
-                field("Total Price";"Total Price")
+                field("Total Price"; "Total Price")
                 {
                 }
-                field("To Invoice";"To Invoice")
+                field("To Invoice"; "To Invoice")
                 {
                 }
             }

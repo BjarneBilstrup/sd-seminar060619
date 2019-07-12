@@ -156,6 +156,11 @@ table 50132 "CSD Seminar Ledger Entry"
     {
         key(Key1; "Entry No.")
         {
+
+        }
+        key(key2; "Document No.", "Document Date")
+        {
+
         }
     }
 

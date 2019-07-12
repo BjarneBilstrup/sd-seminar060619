@@ -83,6 +83,37 @@ page 50101"CSD Seminar Card"
                     PromotedIsBig = true;
                     PromotedOnly = true;
                 }
+                action("Ledger Entries")
+                {
+                    caption = 'Ledger Entries';
+                    RunObject = page "CSD Seminar Ledger Entries";
+                    RunPageLink = "Seminar No." = field("no.");
+                    Promoted = true;
+                    PromotedCategory = Process;
+                    ShortcutKey = "ctrl+F7";
+                    image = WarrantyLedger;
+                }
+                action("&Registrations")
+                {
+                    caption = 'Registrations';
+                    RunObject =page "CSD Seminar Registration List";
+                    RunPageLink = "seminar no." = field("no.");
+                    Promoted = true;
+                    PromotedCategory = Process;
+                    ShortcutKey = "ctrl+F5";
+                }
+            }
+        }
+        area(Processing)
+        {
+            action("Seminar Registration")
+            {
+                RunObject = page "CSD Seminar Registration";
+                RunPageLink = "Seminar No." = field("No.");
+                RunPageMode = create;
+                Image = NewTimesheet;
+                Promoted = true;
+                PromotedCategory = new;
             }
         }
     }
